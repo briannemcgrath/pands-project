@@ -13,6 +13,10 @@ Along with the summary above of the dataset this assignment will also show the f
 - Scatter plot of each variable
 - Additional analysis we deem appropriate (UPDATE THIS TEXT WHEN WE'VE DECIDED WHAT ADDITIONAL ANALYSIS WILL BE DONE)
 
+## References: 
+https://docs.python.org/3/library/os.path.html 
+
+
 Project Plan: (REMOVE BEFORE FINAL SUBMISSION)
 1. Set Up Repository & Add Data Set: Create respository for project, add README file, create analysis.py and add data set files. 
 2. Research the Data Set: Online research of data set from reliable sources to get an understanding - continuous throughout the project. 
