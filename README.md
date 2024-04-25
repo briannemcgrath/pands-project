@@ -15,6 +15,7 @@ Along with the summary above of the dataset this assignment will also show the f
 
 ## References: 
 https://docs.python.org/3/library/os.path.html 
+https://seaborn.pydata.org/generated/seaborn.scatterplot.html 
 
 
 Project Plan: (REMOVE BEFORE FINAL SUBMISSION)
