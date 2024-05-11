@@ -4,14 +4,21 @@ Assignment Work - Analysis carried out on the Fisher's Iris Dataset.
 
 ## Summary of Fisher's Iris Dataset:
 
+## Data Source:
+
 Link to Data Set: https://archive.ics.uci.edu/dataset/53/iris 
 
-## Overview: 
-Along with the summary above of the dataset this assignment will also show the following: 
-- Summary of each variable into a single text file
-- Histrogram of each variable to png files
-- Scatter plot of each variable
-- Additional analysis we deem appropriate (UPDATE THIS TEXT WHEN WE'VE DECIDED WHAT ADDITIONAL ANALYSIS WILL BE DONE)
+## Analysis: 
+- Examine the content of the data set.
+- Summary of each variable into a single text file.
+- Histrogram of each variable to png files.
+- Scatter plot of each variable.
+- Analysis to gain insights into the relationships between variables. 
+- Visualisation including XXX. 
+- Interpretation of findings. 
+
+## Conclusion: 
+This assignment aims to provide a comprehensive analysis of flower characteristics based on the dataset, offering valuable insights into their attributes based on our own findings and previous literature for same. 
 
 ## References: 
 Research on the Dataset: 
