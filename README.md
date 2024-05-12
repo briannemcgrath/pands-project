@@ -29,5 +29,6 @@ https://watermark.silverchair.com/sign_18_6_26.pdf?token=AQECAHi208BE49Ooan9kkhW
 Research for coding and analysis undergone:
 https://seaborn.pydata.org/generated/seaborn.pairplot.html (Pairplots)
 https://seaborn.pydata.org/generated/seaborn.scatterplot.html (Scatterplots)
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html (Boxplots)
 
 
