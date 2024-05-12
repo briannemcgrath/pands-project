@@ -28,7 +28,7 @@ Link to Data Set: https://archive.ics.uci.edu/dataset/53/iris
 - Histrogram of each variable to png files.
 - Scatter plot of each variable.
 - Analysis to gain insights into the relationships between variables. 
-- Visualisation including XXX. 
+- Visualisation - Scatterplots, Boxplots, Histograms, Bar Charts etc. 
 - Interpretation of findings. 
 
 ## Conclusion: 
