@@ -32,7 +32,7 @@ Link to Data Set: https://archive.ics.uci.edu/dataset/53/iris
 - Interpretation of findings. 
 
 ## Conclusion: 
-This assignment aims to provide a comprehensive analysis of flower characteristics based on the dataset, offering valuable insights into their attributes based on our own findings and previous literature for same. 
+In conclusion, this assignment provides an analysis of Iris flower characteristics based on the dataset, offering insights into their attributes. By combining our own findings with insights from previous literature, we have gained a deeper understanding of the dataset and it's relevance in statistical analysis. Through visualisations and analysis, we have explored the features of the dataset, identified patterns and relationships, and gained insights into the differences between different species of Iris flowers. 
 
 ## References: 
 Research on the Dataset: 
