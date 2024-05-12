@@ -43,8 +43,8 @@ Research on the Dataset:
 
 
 Research for Coding and Analysis:
-https://seaborn.pydata.org/generated/seaborn.pairplot.html (Pairplots)
-https://seaborn.pydata.org/generated/seaborn.scatterplot.html (Scatterplots)
-https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html (Boxplots)
+- https://seaborn.pydata.org/generated/seaborn.pairplot.html (Pairplots)
+- https://seaborn.pydata.org/generated/seaborn.scatterplot.html (Scatterplots)
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html (Boxplots)
 
 
