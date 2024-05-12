@@ -35,16 +35,26 @@ Link to Data Set: https://archive.ics.uci.edu/dataset/53/iris
 In conclusion, this assignment provides an analysis of Iris flower characteristics based on the dataset, offering insights into their attributes. By combining our own findings with insights from previous literature, we have gained a deeper understanding of the dataset and it's relevance in statistical analysis. Through visualisations and analysis, we have explored the features of the dataset, identified patterns and relationships, and gained insights into the differences between different species of Iris flowers. 
 
 ## References: 
-Research on the Dataset: 
+**Research on the Dataset:** 
 - https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x 
 - https://www.angela1c.com/projects/iris_project/the-iris-dataset/
 - https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
 - https://en.wikipedia.org/wiki/Iris_flower_data_set
 
-
-Research for Coding and Analysis:
+**Research for Coding and Analysis:**
+- https://realpython.com/pandas-python-explore-dataset/ (Initial Inspection of Dataset)
+- https://www.geeksforgeeks.org/bar-plot-in-matplotlib/ (Bar Charts)
+- https://python-graph-gallery.com/3-control-color-of-barplots/#:~:text=You%20can%20change%20the%20color,and%20it%20returns%20a%20color. (Bar Charts)
 - https://seaborn.pydata.org/generated/seaborn.pairplot.html (Pairplots)
 - https://seaborn.pydata.org/generated/seaborn.scatterplot.html (Scatterplots)
+- https://seaborn.pydata.org/generated/seaborn.lmplot.html (Scatterplots)
+- https://seaborn.pydata.org/generated/seaborn.regplot.html (Scatterplots)
 - https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html (Boxplots)
+- https://towardsdatascience.com/should-you-use-pandas-corr-function-af82c454bc0 and https://stackoverflow.com/questions/74538936/how-to-use-pandas-dataframe-corr-with-only-a-specific-number-of-columns (Correlation Coefficient)
+- https://seaborn.pydata.org/tutorial/color_palettes.html (Seaborn)
+- https://matplotlib.org/stable/gallery/color/named_colors.html (Matplotlib)
 
+Using: Python, Jupyter Notebook.
+
+**by Brianne McGrath**
 
