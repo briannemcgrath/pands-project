@@ -45,6 +45,8 @@ In conclusion, this assignment provides an analysis of Iris flower characteristi
 - https://realpython.com/pandas-python-explore-dataset/ (Initial Inspection of Dataset)
 - https://www.geeksforgeeks.org/bar-plot-in-matplotlib/ (Bar Charts)
 - https://python-graph-gallery.com/3-control-color-of-barplots/#:~:text=You%20can%20change%20the%20color,and%20it%20returns%20a%20color. (Bar Charts)
+- https://matplotlib.org/stable/gallery/statistics/hist.html (Histograms)
+- https://realpython.com/python-for-loop/ (Loops)
 - https://seaborn.pydata.org/generated/seaborn.pairplot.html (Pairplots)
 - https://seaborn.pydata.org/generated/seaborn.scatterplot.html (Scatterplots)
 - https://seaborn.pydata.org/generated/seaborn.lmplot.html (Scatterplots)
