@@ -7,15 +7,42 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#Loading Dataset
 df = pd.read_csv('iris.data')
 
 #Reviewing Dataset
 df.head()
 
+#Spot Checking Data
+df.sample(5)
+
+#Showing Dataset Information
+df.info()
+
+#Showing Summary Statistics
 df.describe() 
 
-#Summary of Each Variable: 
+#Are There Any Columns That Have Missing Values?
+df.isnull().sum()
+
+#Count the Number of Flowers in Each Species
+df['Species'].value_counts()
+
+# Count of Flowers by Species
+flowers_count_by_species = df['Species'].value_counts()
+
+# Colours for Each Species
+colours =['lightblue', 'mediumaquamarine', 'pink']
+
+#Creating Bar Chart
+plt.figure(figsize=(6,4))
+plt.bar(flowers_count_by_species.index, flowers_count_by_species.values, color=colours)
+plt.title('Count of Flowers by Species')
+plt.xlabel('Species')
+plt.ylabel('Count of Flowers')
+plt.xticks(rotation=45)
+plt.show()
+
+#Summary of Each Variable - Single Text File: 
 
 #Calculating summary statistics for each variable
 summary = df.describe()
@@ -28,70 +55,67 @@ with open("variable_summary.txt", "w") as file:
     file.write(summary_text)
 print("Summary of variables written to 'variable_summary.txt' file.")
 
-#Histogram Trial Pt 2: 
-
-##SUCCESS!! - Add colours to match rest of project at a later date :) 
-
 #Defining the output folder for histograms
 output_folder = 'histograms'
 
 def save_histograms(df, output_folder):
+
+    #Defining colours for each Histogram
+    colours = ['mediumaquamarine', 'pink', 'lightblue', 'mediumorchid']
+
     #Loop through each column in the dataset
     for column in df.columns: 
         #Create a histogram for the varibale and save it is a PNG file
-        df[column].plot(kind='hist', bins=10)
+        df[column].plot(kind='hist', bins=10, color=colours[i % len(colours)]) #Not showing in the folder? REVIEW!!
         plt.title(f'Histograms of {column}')
         plt.xlabel(column)
         plt.ylabel('Frequency')
+        plt.grid(True) #Not showing either?
         plt.savefig(f'{output_folder}/{column}_histogram.png')
         plt.close()
+print("Histograms of variables output to 'histograms' file.")
 
+#Scatter Plot for Each Variable
 
-#Scatter Plots 
+for column in df.columns[:-1]: #Species Column Excluded
+    plt.figure(figsize=(8,6))
+    sns.scatterplot(data=df, x=column, y='Species', hue='Species', palette='pastel')
+    plt.title(f"Scatterplot of {column} for each Species")
+    plt.xlabel(column)
+    plt.ylabel("Species")
+    plt.grid() #Maybe adjust linestyle - review this
+    plt.show()
 
-sns.scatterplot(x='SepalLengthCm', y='SepalWidthCm', data=df, color='mediumaquamarine')
-plt.title('Sepal Width vs Sepal Length')
-plt.xlabel('Sepal Length (CM)')
-plt.ylabel('Sepal Width (CM)')
-plt.grid()
-plt.show()
-        
-
-#Adding Regression Line
-
-sns.regplot(x='SepalLengthCm', y='SepalWidthCm', data=df, color='mediumaquamarine')
-plt.title('Septal Width vs Sepal Length')
-plt.xlabel('Sepal Length (CM)')
-plt.ylabel('Sepal Width (CM)')
-plt.grid()
+    #Creating a Pairplot
+sns.pairplot(df, hue='Species', palette='pastel')
 plt.show()
 
-# lmplot seperated by Species
+# Boxplot for each variable
+plt.figure(figsize=(12, 6))
 
-sns.lmplot(x='SepalLengthCm', y='SepalWidthCm', data=df, hue='Species', palette='pastel')
-plt.title('Septal Width vs Sepal Length')
-plt.xlabel('Sepal Length (CM)')
-plt.ylabel('Sepal Width (CM)')
-plt.grid()
+#Defining Colours 
+colours=['mediumaquamarine', 'lightblue', 'pink', 'navajowhite'] 
+for i, column in enumerate(df.columns[:-1]):  # Exclude the Species column
+    plt.subplot(2, 2, i + 1)
+    sns.boxplot(x='Species', y=column, data=df, color=colours[i % len(colours)])
+    plt.title(f'Boxplot of {column} for each species')
+plt.tight_layout()
 plt.show()
 
-#Scatter Plots 
+#Calculate Pearson correlation coefficient for Iris Setosa
+setosa_correlation = df[df['Species'] == 'Iris-setosa']['PetalWidthCm'].corr(df[df['Species'] == 'Iris-setosa']['PetalLengthCm'])
 
-sns.scatterplot(x='PetalLengthCm', y='PetalWidthCm', data=df, color='powderblue')
-plt.title('Petal Width vs Petal Length')
-plt.xlabel('Petal Length (CM)')
-plt.ylabel('Petal Width (CM)')
-plt.grid()
-plt.show()
+#Calculate Pearson correlation coefficient for Iris Versicolor
+versicolor_correlation = df[df['Species'] == 'Iris-versicolor']['PetalWidthCm'].corr(df[df['Species'] == 'Iris-versicolor']['PetalLengthCm'])
 
-# Adding Regression Line
+#Calculate Pearson correlation coefficient for Iris Virginica
+viriginica_correlation = df[df['Species'] == 'Iris-virginica']['PetalWidthCm'].corr(df[df['Species'] == 'Iris-virginica']['PetalLengthCm'])
 
-sns.regplot(x='PetalLengthCm', y='PetalWidthCm', data=df, color='powderblue')
-plt.title('Petal Width vs Petal Length')
-plt.xlabel('Petal Length (CM)')
-plt.ylabel('Petal Width (CM)')
-plt.grid()
-plt.show()
+
+#Print the correlation coefficients for Petal Width vs Petal Length
+print("Pearson correlation coefficient for Petal Width vs Petal Length - Iris Setosa:", setosa_correlation)
+print("Pearson correlation coefficient for Petal Width vs Petal Length - Iris Versicolor:", versicolor_correlation)
+print("Pearson correlation coefficient for Petal Width vs Petal Length - Iris Virginica:", viriginica_correlation)
 
 # lmplot seperated by Species
 
