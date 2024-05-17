@@ -55,25 +55,27 @@ with open("variable_summary.txt", "w") as file:
     file.write(summary_text)
 print("Summary of variables written to 'variable_summary.txt' file.")
 
-#Defining the output folder for histograms
+# Defining the output folder for histograms
 output_folder = 'histograms'
 
 def save_histograms(df, output_folder):
-
-    #Defining colours for each Histogram
+    # Defining colours for each Histogram
     colours = ['mediumaquamarine', 'pink', 'lightblue', 'mediumorchid']
 
-    #Loop through each column in the dataset
-    for column in df.columns: 
-        #Create a histogram for the varibale and save it is a PNG file
-        df[column].plot(kind='hist', bins=10, color=colours[i % len(colours)]) #Not showing in the folder? REVIEW!!
+    # Loop through each column and color
+    for column, color in zip(df.columns, colours):
+        # Create a histogram for the variable and save it as a PNG file
+        df[column].plot(kind='hist', bins=10, color=color)
         plt.title(f'Histograms of {column}')
         plt.xlabel(column)
         plt.ylabel('Frequency')
-        plt.grid(True) #Not showing either?
+        plt.grid(True) # Show grid
         plt.savefig(f'{output_folder}/{column}_histogram.png')
         plt.close()
-print("Histograms of variables output to 'histograms' file.")
+    print("Histograms of variables output to 'histograms' folder.")
+
+# Call the function
+save_histograms(df, output_folder)
 
 #Scatter Plot for Each Variable
 
