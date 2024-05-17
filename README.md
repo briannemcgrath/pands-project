@@ -53,6 +53,8 @@ In conclusion, this assignment provides an analysis of Iris flower characteristi
 - https://towardsdatascience.com/should-you-use-pandas-corr-function-af82c454bc0 and https://stackoverflow.com/questions/74538936/how-to-use-pandas-dataframe-corr-with-only-a-specific-number-of-columns (Correlation Coefficient)
 - https://seaborn.pydata.org/tutorial/color_palettes.html (Seaborn)
 - https://matplotlib.org/stable/gallery/color/named_colors.html (Matplotlib)
+- https://www.w3schools.com/python/ref_func_zip.asp (Zip Function)
+- https://docs.python.org/3/library/functions.html#zip (Zip Function)
 
 Using: Python, Jupyter Notebook.
 
