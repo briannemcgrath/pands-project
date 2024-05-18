@@ -4,7 +4,7 @@ Assignment Work - Analysis carried out on the Fisher's Iris Dataset.
 
 ## Summary of Fisher's Iris Dataset:
 
-The Fisher's Iris dataset is a classic dataset in the field of statistics and machine learning, introduced by the British statistician and biologist Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems". It consists of 150 samples of Iris flowers for three species: Setosa, Versicolor, and Virginica. 
+The Fisher's Iris dataset is a classic dataset in the field of statistics and machine learning, introduced by the British statistician and biologist Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems". It consists of 150 samples of Iris flowers for three species: Setosa, Versicolor, and Virginica. The dataset serves as a benchmark for various calssification and clustering algorithms and is widely used for species classification, exploratory data analysis, and model benchmarking.
 
 Here is an overview of the dataset: 
 
