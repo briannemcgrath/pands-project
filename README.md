@@ -34,6 +34,16 @@ Link to Data Set: https://archive.ics.uci.edu/dataset/53/iris
 ## Conclusion: 
 In conclusion, this assignment provides an analysis of Iris flower characteristics based on the dataset, offering insights into their attributes. By combining our own findings with insights from previous literature, we have gained a deeper understanding of the dataset and it's relevance in statistical analysis. Through visualisations and analysis, we have explored the features of the dataset, identified patterns and relationships, and gained insights into the differences between different species of Iris flowers. 
 
+## Running the Python Code: 
+- **Install Python and Required Libraries:** Ensure you have Python installed on your computer. You'll also need the necessary Python libraries - pandas, matplotlib, and seaborn. 
+- **Download the Python Script:** Download the 'analysis.py' file to your computer and save in a directory.  
+- **Download the Dataset:** Following the relevant link listed above, download the dataset and place it in the same directory as the Python script. 
+- **Run the Python Script:** Open a terminal or command prompt, navigate to the directory containing the Python Script and the Dataset, and run the script using the Python interpreter: (python anlysis.py)
+- **Review the Results:** Once the script finishes executing, you'll see the results printed in the terminal or command prompt. 
+    - Summary of Variables will be written to 'variable_summary.txt' as a text file. 
+    - Histograms of Variables will be output to 'histograms' folder as PNG files. 
+
+
 ## References: 
 **Research on the Dataset:** 
 - https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x 
