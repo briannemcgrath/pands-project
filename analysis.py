@@ -7,33 +7,34 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#Load the Iris dataset
 df = pd.read_csv('iris.data')
 
-#Reviewing Dataset
+#Reviewing the first few rows of the Dataset
 df.head()
 
-#Spot Checking Data
+#Spot checking a random sample of the Dataset
 df.sample(5)
 
-#Showing Dataset Information
+#Displaying information about the Dataset
 df.info()
 
-#Showing Summary Statistics
+#Showing summary statistics of the Dataset
 df.describe() 
 
-#Are There Any Columns That Have Missing Values?
+#Checking for missing values in the Dataset
 df.isnull().sum()
 
-#Count the Number of Flowers in Each Species
+#Counting the number of flowers in each species
 df['Species'].value_counts()
 
-# Count of Flowers by Species
+#Counting the number of flowers in each species
 flowers_count_by_species = df['Species'].value_counts()
 
-# Colours for Each Species
+#Defining colours for each species
 colours =['lightblue', 'mediumaquamarine', 'pink']
 
-#Creating Bar Chart
+#Creating a bar chart to visualise the count of flowers by species
 plt.figure(figsize=(6,4))
 plt.bar(flowers_count_by_species.index, flowers_count_by_species.values, color=colours)
 plt.title('Count of Flowers by Species')
@@ -50,7 +51,7 @@ summary = df.describe()
 #Format the summary information
 summary_text = summary.to_string()
 
-#Write the summary to a text file
+#Saving summary statistics to a text file
 with open("variable_summary.txt", "w") as file:
     file.write(summary_text)
 print("Summary of variables written to 'variable_summary.txt' file.")
@@ -58,6 +59,7 @@ print("Summary of variables written to 'variable_summary.txt' file.")
 # Defining the output folder for histograms
 output_folder = 'histograms'
 
+#Function to save historgrams of each variable
 def save_histograms(df, output_folder):
     # Defining colours for each Histogram
     colours = ['mediumaquamarine', 'pink', 'lightblue', 'mediumorchid']
@@ -74,7 +76,7 @@ def save_histograms(df, output_folder):
         plt.close()
     print("Histograms of variables output to 'histograms' folder.")
 
-# Call the function
+# Call the function to save histograms
 save_histograms(df, output_folder)
 
 #Scatter Plot for Each Variable
