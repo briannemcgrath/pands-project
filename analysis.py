@@ -85,7 +85,7 @@ for column in df.columns[:-1]: #Species Column Excluded
     plt.title(f"Scatterplot of {column} for each Species")
     plt.xlabel(column)
     plt.ylabel("Species")
-    plt.grid() #Maybe adjust linestyle - review this
+    plt.grid() 
     plt.show()
 
     #Creating a Pairplot
